@@ -12,7 +12,7 @@ int main()
     ios::sync_with_stdio(false); // for not syncing with c
     cin.tie(nullptr);            // for easy input hassle free
 
-    it N, Q;
+    it N, Q;                    // N is the element number and Q is the query(loop)
     cin >> N >> Q;
     ll int arr[N], X, i, l, h, j;
     for (i = 0; i < N; i++)
