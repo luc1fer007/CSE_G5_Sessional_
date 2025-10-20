@@ -20,7 +20,7 @@ int main()
         cin >> arr[i];
     }
     // Sorting the array binary search first condition
-    // or u can use sort(arr, arr+size) function;
+    // or u can use sort(arr, arr+size) function it works in codeforces other with Time Limit Exceeded
 
     for (i = 0; i < N - 1; i++)
     {
