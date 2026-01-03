@@ -57,3 +57,23 @@ int main()
     cout << arr[n - 1] << endl;
     return 0;
 }
+
+//Optimized code 
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int c;
+    cin >> c;
+    vector<int> p;
+    while (c-- > 0)
+    {
+        int x;
+        cin >> x;
+        p.push_back(x);
+    }
+    sort(p.rbegin(), p.rend());
+    cout << p[1] << '\n';
+    return 0;
+}
