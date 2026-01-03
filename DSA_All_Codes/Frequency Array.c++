@@ -20,3 +20,25 @@ int main()
     }
     return 0;
 }
+
+//Optimized code
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    map<int, int> count; // sorted
+    // unordered_map<int, int> count; //unSorted
+    while (n --> 0)
+    {
+        int x;
+        cin >> x;
+        count[x]++;
+    }
+    for (auto p : count)
+    {
+        cout << p.first << " " << p.second << '\n';
+    }
+}
