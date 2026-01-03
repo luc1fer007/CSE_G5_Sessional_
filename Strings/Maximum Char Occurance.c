@@ -25,3 +25,27 @@ int main()
     printf("Occur : %d\n", max);
     return 0;
 }
+
+//Optimized using STL
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s;
+    getline(cin, s);
+    unordered_map<char, int> m;
+    int count = 0;
+    char ans;
+    for (int c : s)
+    {
+        m[c]++;
+        if (count < m[c])
+        {
+            ans = c;
+            count = m[c];
+        }
+    }
+    cout << ans << '\n';
+    return 0;
+}
