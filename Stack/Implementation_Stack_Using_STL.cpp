@@ -14,11 +14,16 @@ int main()
         p.push(x);
     }
     cout << (p.empty() ? "YES\n" : "NO\n");
+    bool check = true;
     while (!p.empty())
     {
-        cout << p.top() << '\n';
+        if(!check)
+            cout << " ";
+        cout << p.top();
+        check = false;
         p.pop();
     }
+    cout << endl;
     cout << (p.empty() ? "YES\n" : "NO\n");
     cout << p.size() << '\n';
     return 0;
