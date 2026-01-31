@@ -40,7 +40,7 @@ int main()
     (*obj).print();
     //obj->print(); //other ways to access
     delete ptr;
-    delete ptr2;
+    delete[] ptr2;
     delete obj;
     cout << "complete" << endl;
     return 0;
