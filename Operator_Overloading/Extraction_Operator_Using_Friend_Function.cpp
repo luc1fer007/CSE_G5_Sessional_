@@ -7,6 +7,7 @@ using namespace std;
 
 class demo
 {
+    private:
     int length, breadth;
     friend istream& operator>>(istream&in, demo &ob);
     friend ostream& operator<<(ostream&out, demo &ob);
