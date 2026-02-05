@@ -1,3 +1,37 @@
+# Binary Tree Algorithms
+
+### Algorithm 1: BUILD_TREE
+1.  Read: X.
+2.  If X = 0, then :
+        Return NULL.
+    [End of if structure]
+3.  Set ROOT := New Node.
+4.  Set ROOT -> DATA := X.
+5.  Set ROOT -> LEFT := Call BUILD_TREE().
+6.  Set ROOT -> RIGHT := Call BUILD_TREE().
+7.  Return ROOT.
+8.  Exit.
+
+### Algorithm 2: PRE_ORDER(ROOT, RES)
+1.  If ROOT = NULL, then :
+        Return.
+    [End of if structure]
+2.  Add ROOT -> DATA to RES.
+3.  Call PRE_ORDER(ROOT -> LEFT, RES).
+4.  Call PRE_ORDER(ROOT -> RIGHT, RES).
+5.  Exit.
+
+### Algorithm 3: MAIN
+1.  Set ROOT := Call BUILD_TREE().
+2.  Set RES := Empty List.
+3.  Call PRE_ORDER(ROOT, RES).
+4.  Set K := 1 and N := Size of RES.
+5.  Repeat steps 6 and 7 while K <= N:
+6.      Write: RES[K].
+7.      Set K := K + 1.
+8.  Exit.
+
+//Code of PreOrder
 #include <bits/stdc++.h>
 using namespace std;
 
